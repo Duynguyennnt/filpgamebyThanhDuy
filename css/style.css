@@ -1,0 +1,41 @@
+body{
+  background-image: url('../images/nen.jpg');
+  background-size: cover;  
+}
+.font{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+}
+.memory-game {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.memory-stick {
+  width: 95px;
+  height: 95px;
+  position: relative;
+  margin: 1px;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+.range{
+  padding-left: 0px;
+}
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 5px;
+  background: rgb(15, 122, 223);
+  border-radius: 5px; 
+}
+.flip {
+  transform: rotateY(180deg);
+
+}
+.front {
+  transform: rotateY(180deg);
+}
